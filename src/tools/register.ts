@@ -58,13 +58,25 @@ const metadata: APIApplicationRoleConnectionMetadata[] = [
   {
     type: ApplicationRoleConnectionMetadataType.DatetimeGreaterThanOrEqual,
     key: "created_at",
-    name: "Created At",
+    name: "Discord Account Created At",
     name_localizations: {
-      ja: "作成日時",
+      ja: "Discordアカウント作成日時",
     },
-    description: "The date and time the user created their Discord account",
+    description: "Days since creating their Discord account",
     description_localizations: {
-      ja: "ユーザーがDiscordアカウントを作成した日時",
+      ja: "日以上前にDiscordのアカウントが作成されている必要があります",
+    }
+  },
+  {
+    type: ApplicationRoleConnectionMetadataType.BooleanEqual,
+    key: "bot_protection",
+    name: "Bot Protection",
+    name_localizations: {
+      ja: "Bot対策",
+    },
+    description: "Is Captcha required for gaining access to this role",
+    description_localizations: {
+      ja: "メンバーはCaptchaを解く必要があります",
     }
   }
 ];

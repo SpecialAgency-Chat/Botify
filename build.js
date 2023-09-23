@@ -33,6 +33,7 @@ const ctx2 = await context({
   entryPoints: ["src/tools/register.ts"],
   outfile: "dist/register.js",
   platform: "node",
+  packages: "external"
 });
 
 await Promise.all([ctx1.rebuild(), ctx2.rebuild()]);

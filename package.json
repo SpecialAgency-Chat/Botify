@@ -31,12 +31,14 @@
   "homepage": "https://github.com/SpecialAgency-Chat/Botify#readme",
   "dependencies": {
     "@cloudflare/workers-types": "^4.20230914.0",
+    "browser-util-inspect": "^0.2.0",
     "discord-api-types": "^0.37.57",
     "discord-interactions": "^3.4.0",
     "hono": "^3.7.1",
     "tiny-jsonc": "^1.0.1"
   },
   "devDependencies": {
+    "@types/browser-util-inspect": "^0.2.2",
     "@types/node": "^20.6.3",
     "@typescript-eslint/eslint-plugin": "^6.7.2",
     "@typescript-eslint/parser": "^6.7.2",

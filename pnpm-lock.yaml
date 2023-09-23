@@ -8,6 +8,9 @@ dependencies:
   '@cloudflare/workers-types':
     specifier: ^4.20230914.0
     version: 4.20230914.0
+  browser-util-inspect:
+    specifier: ^0.2.0
+    version: 0.2.0
   discord-api-types:
     specifier: ^0.37.57
     version: 0.37.57
@@ -22,6 +25,9 @@ dependencies:
     version: 1.0.1
 
 devDependencies:
+  '@types/browser-util-inspect':
+    specifier: ^0.2.2
+    version: 0.2.2
   '@types/node':
     specifier: ^20.6.3
     version: 20.6.3
@@ -604,6 +610,10 @@ packages:
       fastq: 1.15.0
     dev: true
 
+  /@types/browser-util-inspect@0.2.2:
+    resolution: {integrity: sha512-JTfgEA1hErP6f7ONmngL4INr0/BcaccmsKjiBimSHcZUKjJ1EpJ1vB4hni84j0QhL8oVrLWdo4r3EsdVoGw3Rg==}
+    dev: true
+
   /@types/json-schema@7.0.13:
     resolution: {integrity: sha512-RbSSoHliUbnXj3ny0CNFOoxrIDV6SUGyStHsvDqosw6CkdPV8TtWGlfecuK4ToyMEAql6pzNxgCFKanovUzlgQ==}
     dev: true
@@ -836,6 +846,10 @@ packages:
     dependencies:
       fill-range: 7.0.1
     dev: true
+
+  /browser-util-inspect@0.2.0:
+    resolution: {integrity: sha512-R7WvAj0p9FtwS2Jbtc1HUd1+YZdeb5EEqjBSbbOK3owJtW1viWyJDeTPy43QZ7bZ8POtb1yMv++h844486jMsQ==}
+    dev: false
 
   /buffer-from@1.1.2:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
