@@ -10,7 +10,7 @@
     "build": "node build.js",
     "lint:fix": "eslint . --fix && prettier --write .",
     "dev": "wrangler dev",
-    "deploy": "wrangler deploy",
+    "release": "wrangler deploy",
     "register": "node dist/register.js"
   },
   "engines": {
