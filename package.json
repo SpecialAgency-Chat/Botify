@@ -1,0 +1,50 @@
+{
+  "name": "botify",
+  "version": "1.0.0",
+  "description": "Discord Verification Bot with Linked Roles (No servers required!)",
+  "main": "dist/server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . & prettier --check .",
+    "build": "node build.js",
+    "lint:fix": "eslint . --fix && prettier --write .",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "register": "node dist/register.js"
+  },
+  "engines": {
+    "npm": "Don't use npm, use pnpm instead."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpecialAgency-Chat/Botify.git"
+  },
+  "keywords": [
+    "discord"
+  ],
+  "author": "waki285 <suzuneu@suzuneu.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/SpecialAgency-Chat/Botify/issues"
+  },
+  "homepage": "https://github.com/SpecialAgency-Chat/Botify#readme",
+  "dependencies": {
+    "@cloudflare/workers-types": "^4.20230914.0",
+    "discord-api-types": "^0.37.57",
+    "discord-interactions": "^3.4.0",
+    "hono": "^3.7.1",
+    "tiny-jsonc": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.3",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "dotenv": "^16.3.1",
+    "esbuild": "^0.19.3",
+    "eslint": "^8.50.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2",
+    "wrangler": "^3.9.0"
+  }
+}

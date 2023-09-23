@@ -1,0 +1,4 @@
+{
+  "captchaMethod": "recaptcha", // recaptcha, turnstile, none,
+  "captchaPublicKey": "6Lc6BAAAAAAAAChqRbQZcn_yyyyyyyyyyyyyyyyy"
+}
