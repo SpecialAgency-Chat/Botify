@@ -3,6 +3,9 @@
     "target": "ESNext",
     "lib": ["ESNext", "DOM"],
     "module": "ESNext",
+    "jsx": "react",
+    "jsxFactory": "jsx",
+    "jsxFragmentFactory": "Fragment",
     "moduleResolution": "Node",
     "baseUrl": "./",
     "paths": {
@@ -19,5 +22,8 @@
     "noUncheckedIndexedAccess": true,
     "noPropertyAccessFromIndexSignature": true,
     "skipLibCheck": true
-  }
+  },
+  "exclude": [
+    "node_modules"
+  ]
 }
