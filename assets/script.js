@@ -7,5 +7,5 @@ async function onSuccess(token) {
     },
     body: JSON.stringify({ token, code: document.getElementById("authcode").value })
   });
-  location.href = "/success";
+  location.href = "/callback/success";
 }

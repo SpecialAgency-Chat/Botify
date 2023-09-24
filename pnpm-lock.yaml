@@ -8,6 +8,9 @@ dependencies:
   '@cloudflare/workers-types':
     specifier: ^4.20230914.0
     version: 4.20230914.0
+  '@sapphire/snowflake':
+    specifier: ^3.5.1
+    version: 3.5.1
   browser-util-inspect:
     specifier: ^0.2.0
     version: 0.2.0
@@ -606,6 +609,11 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
     dev: true
+
+  /@sapphire/snowflake@3.5.1:
+    resolution: {integrity: sha512-BxcYGzgEsdlG0dKAyOm0ehLGm2CafIrfQTZGWgkfKYbj+pNNsorZ7EotuZukc2MT70E0UbppVbtpBrqpzVzjNA==}
+    engines: {node: '>=v14.0.0', npm: '>=7.0.0'}
+    dev: false
 
   /@types/browser-util-inspect@0.2.2:
     resolution: {integrity: sha512-JTfgEA1hErP6f7ONmngL4INr0/BcaccmsKjiBimSHcZUKjJ1EpJ1vB4hni84j0QhL8oVrLWdo4r3EsdVoGw3Rg==}

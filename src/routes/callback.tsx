@@ -37,7 +37,27 @@ const ProceedContent = (props: { code: string }) => (
   </Layout>
 );
 
+const SuccessContent = () => (
+  <Layout>
+    <h1>Success!</h1>
+    <script>
+      {`setTimeout(() => {
+        window.close();
+      }, 10000);`}
+    </script>
+  </Layout>
+);
+
+
+
 router.get("/", (c) => {
   if (!c.req.query("code")) return c.text("No code provided");
+  
   return c.html(<ProceedContent code={c.req.query("code")!} />);
 });
+
+router.get("/success", (c) => {
+  return c.html(<SuccessContent />);
+});
+
+export default router;

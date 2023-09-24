@@ -31,6 +31,7 @@
   "homepage": "https://github.com/SpecialAgency-Chat/Botify#readme",
   "dependencies": {
     "@cloudflare/workers-types": "^4.20230914.0",
+    "@sapphire/snowflake": "^3.5.1",
     "browser-util-inspect": "^0.2.0",
     "discord-api-types": "^0.37.57",
     "discord-interactions": "^3.4.0",
