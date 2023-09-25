@@ -13,10 +13,10 @@ const Layout = (props: { children: any }) => {
     <html>
       <head>
         <title>Botify</title>
-        <link rel="stylesheet" href="/assets/style.css" />
-        ${Config.captchaMethod === "recaptcha" ? '<script src="https://www.google.com/recaptcha/api.js" async defer></script>':
-        Config.captchaMethod === "turnstile" ? '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>':''}
-        <script src="/assets/script.js" async defer></script>
+        <link rel="stylesheet" href="/static/style.css" />
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+        <script src="/static/script.js" async defer></script>
       </head>
       <body>
         <div class="container">
@@ -40,11 +40,11 @@ const ProceedContent = (props: { code: string }) => (
 const SuccessContent = () => (
   <Layout>
     <h1>Success!</h1>
-    <script>
-      {`setTimeout(() => {
+    <script dangerouslySetInnerHTML={{
+      __html: `setTimeout(() => {
         window.close();
-      }, 10000);`}
-    </script>
+      }, 10000);`
+    }} />
   </Layout>
 );
 

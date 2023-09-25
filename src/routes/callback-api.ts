@@ -2,8 +2,11 @@ import { completeAuth } from "@/tools/assign";
 import { Hono } from "hono";
 import Config from "@/../config";
 import { Bindings } from "@/interfaces";
+import { getLogger } from "@/logger";
 
 const router = new Hono<Bindings>();
+
+const logger = getLogger("CallbackApi");
 
 router.post("/", async (c) => {
   const body = await c.req.json();
@@ -11,6 +14,8 @@ router.post("/", async (c) => {
   if (!body.code || !body.token) {
     return c.json({ error: "Missing code or token" });
   }
+
+  logger.info("Received callback");
 
   let url;
 
@@ -35,11 +40,15 @@ router.post("/", async (c) => {
 
   const json = await res.json();
 
+  logger.trace(json);
+
   if (!json.success) {
     return c.json({ error: "Invalid captcha" });
   }
 
-  completeAuth(body.code, c.env);
+  await completeAuth(body.code, c.env);
 
   return c.json({ success: true });
 });
+
+export default router;

@@ -25,7 +25,8 @@ const ctx1 = await context({
   ...baseOptions,
   entryPoints: ["src/server.ts"],
   outfile: "dist/server.js",
-  platform: "browser"
+  platform: "browser",
+  external: ["__STATIC_CONTENT_MANIFEST"]
 });
 
 const ctx2 = await context({

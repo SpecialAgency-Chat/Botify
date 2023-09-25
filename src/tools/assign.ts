@@ -31,12 +31,14 @@ export async function completeAuth(code: string, env: Env) {
 
   logger.debug(user);
 
+  const date = new Date(Number(DiscordSnowflake.deconstruct(user.id).timestamp));
+
   await fetch(`https://discord.com/api/v10${Routes.userApplicationRoleConnection(env.DISCORD_CLIENT_ID)}`, {
     method: "PUT",
     body: JSON.stringify({
       platform_name: "Botify",
       metadata: {
-        birthday: new Date(Number(DiscordSnowflake.deconstruct(user.id).timestamp)).toISOString(),
+        created_at: `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`,
       }
     }),
     headers: {
