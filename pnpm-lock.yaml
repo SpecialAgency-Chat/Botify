@@ -21,8 +21,8 @@ dependencies:
     specifier: ^3.4.0
     version: 3.4.0
   hono:
-    specifier: ^3.7.1
-    version: 3.7.1
+    specifier: ^3.11.7
+    version: 3.11.7
 
 devDependencies:
   '@types/browser-util-inspect':
@@ -1289,8 +1289,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /hono@3.7.1:
-    resolution: {integrity: sha512-S6XiX1wr2mj6zo1HNkmAJ3vVkHTsMMQuAN9W3gDj7vKCf3Kc8/zfdrUHJKkzIz9fknibznfgPWDOKkt5Ae+3EQ==}
+  /hono@3.11.7:
+    resolution: {integrity: sha512-TcfAq7IdipF+9coxnuzYlSSBXbm9mTyWjjagLCv/2ampboNcKJdi+XCK5G48mHQtpI5+9Rj3J4FfcGgw9vzIww==}
     engines: {node: '>=16.0.0'}
     dev: false
 
